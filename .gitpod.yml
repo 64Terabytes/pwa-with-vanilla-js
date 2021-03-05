@@ -5,3 +5,7 @@ tasks:
 ports:
   - port: 3000
     onOpen: open-browser
+
+vscode:
+  extensions:
+    - ritwickdey.liveserver@5.6.1:5Mhl1RgVVDcIym163x8r+w==

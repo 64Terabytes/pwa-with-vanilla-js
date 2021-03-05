@@ -3,7 +3,7 @@
     "version": "2",
     "name": "AC Hourly Music",
     "short_name": "ACMusic",
-    "start_url": "/",
+    "start_url": "./index.html",
     "display": "standalone",
     "background_color": "#fdfdfd",
     "theme_color": "#db4938",
