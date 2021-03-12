@@ -6,12 +6,15 @@ function Playsong(file) {
     x.play();
 }
 function StartApp() {
+    var objDate = new Date();
+    var hours = objDate.getHours();
+    console.log(hours);
     Playsong("/audio/1 AM.mp3");
 }
 
 
-document.addEventListener("DOMContentLoaded", StartApp);
-document.querySelector("#NewLeafArt")
+// document.addEventListener("DOMContentLoaded", StartApp);
+document.querySelector("#NewLeafArt").onclick(StartApp);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
