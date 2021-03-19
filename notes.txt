@@ -1,0 +1,11 @@
+gp open /etc/apache2/apache2.conf 
+
+# Direcrory and files to be served
+DirectoryIndex index.html index.htm index.php
+DocumentRoot "${GITPOD_REPO_ROOT}"
+<Directory "${GITPOD_REPO_ROOT}">
+    AllowOverride all
+    Require all granted
+</Directory>
+
+apachectl restart

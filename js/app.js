@@ -9,12 +9,19 @@ function StartApp() {
     var objDate = new Date();
     var hours = objDate.getHours();
     console.log(hours);
-    Playsong("/audio/1 AM.mp3");
+    var FileName = "";
+    if(hours <= 12) {
+        FileName = hours + " AM.mp3";
+    }
+    else {
+        FileName = (hours - 12) + " PM.mp3";
+    }
+    Playsong("/audio/" + FileName);
 }
 
 
 // document.addEventListener("DOMContentLoaded", StartApp);
-document.querySelector("#NewLeafArt").onclick(StartApp);
+// document.getElementById("NewLeafArt").onclick(StartApp);
 
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function() {
