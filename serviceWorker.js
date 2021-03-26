@@ -1,10 +1,12 @@
 const staticACMusic = "AC-Music-PWA-v1";
 const assets = [
   "/",
+  "/serviceWorker.js",
   "/index.html",
   "/css/style.css",
   "/js/app.js",
-  "/images/new-leaf-box-art.jpg"
+  "/images/new-leaf-box-art.jpg",
+  "/audio/*"
 ];
 
 self.addEventListener("install", installEvent => {
